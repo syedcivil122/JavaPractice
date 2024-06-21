@@ -144,7 +144,7 @@ class UserInput {
 		System.out.println("Enter a age: ");
 		int age=s.nextInt();
 		System.out.println("Name "+name + ", Age "+age +", Gender "+ gender+" ,mobileno "+ mob);
-		
+		s.close();
 	}
 }
 

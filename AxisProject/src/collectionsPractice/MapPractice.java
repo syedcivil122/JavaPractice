@@ -68,6 +68,20 @@ public class MapPractice {
 			String value = entry.getValue();
 			System.out.println(key + " >>>>>> " + value);
 		}
+		
+		String str = "Test Test Automation Central Central";
+		
+		
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		
+		for(String s:str.split(" ")) {
+			if(map.containsKey(s)) {
+				map.put(s, map.get(s) + 1);
+			}else {
+				map.put(s, 1);
+			}
+		}System.out.println(map);
+		
 	}
 
 
